@@ -1,16 +1,101 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Cards Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Cards Gallery</h2>
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 shadow-sm">
+          <img src="image1.jpg" class="card-img-top img-fluid rounded" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('image1.jpg')" alt="Image 1">
+          <div class="card-body text-center">
+            <h6>Lorem Ipsum</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 shadow-sm">
+          <img src="image2.jpg" class="card-img-top img-fluid rounded" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('image2.jpg')" alt="Image 2">
+          <div class="card-body text-center">
+            <h6>Lorem Ipsum</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 shadow-sm">
+          <img src="image3.jpg" class="card-img-top img-fluid rounded" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('image3.jpg')" alt="Image 3">
+          <div class="card-body text-center">
+            <h6>Lorem Ipsum</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 shadow-sm">
+          <img src="image4.jpg" class="card-img-top img-fluid rounded" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('image4.jpg')" alt="Image 4">
+          <div class="card-body text-center">
+            <h6>Lorem Ipsum</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 shadow-sm">
+          <img src="image5.jpg" class="card-img-top img-fluid rounded" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('image5.jpg')" alt="Image 5">
+          <div class="card-body text-center">
+            <h6>Lorem Ipsum</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 shadow-sm">
+          <img src="image6.jpg" class="card-img-top img-fluid rounded" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('image6.jpg')" alt="Image 6">
+          <div class="card-body text-center">
+            <h6>Lorem Ipsum</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0">
+          <img src="" id="lightboxImage" class="img-fluid rounded w-100" alt="Lightbox">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS + Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
 </body>
-
 </html>
