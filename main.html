@@ -1,49 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cards Gallery</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    h2, h6, p { text-align: center; }
+    .card { border-radius: 10px; }
+  </style>
 </head>
 <body>
 
-  <div class="container py-5">
-    <h2 class="text-center mb-4">Cards Gallery</h2>
-    <div class="row g-4">
-
-      <!-- Card Template (x6) -->
-      <!-- Repeat this 6 times with unique images -->
-      <div class="col-md-4 col-sm-6">
-        <div class="card h-100 shadow-sm">
-          <img src="image1.jpg" class="card-img-top img-fluid rounded lightbox" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('image1.jpg')" alt="Image 1">
-          <div class="card-body text-center">
-            <h6>Lorem Ipsum</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Repeat above block for images 2 to 6: image2.jpg ... image6.jpg -->
-
-    </div>
-  </div>
-
-  <!-- Lightbox Modal (hidden image on load) -->
-  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content bg-transparent border-0">
-        <div class="modal-body p-0">
-          <img src="" id="lightboxImage" class="img-fluid rounded w-100 d-none" alt="Lightbox Image">
+<div class="container">
+  <h2 class="my-4">Cards Gallery</h2>
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm lightbox">
+        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image 1">
+        <div class="card-body text-center">
+          <h6 class="card-title">Card Title 1</h6>
+          <p class="card-text">This is a description for card 1.</p>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Bootstrap JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./script.js"></script>
+    <!-- Repeat 5 more cards -->
+    <!-- Card 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm lightbox">
+        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image 2">
+        <div class="card-body text-center">
+          <h6 class="card-title">Card Title 2</h6>
+          <p class="card-text">This is a description for card 2.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm lightbox">
+        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image 3">
+        <div class="card-body text-center">
+          <h6 class="card-title">Card Title 3</h6>
+          <p class="card-text">This is a description for card 3.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm lightbox">
+        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image 4">
+        <div class="card-body text-center">
+          <h6 class="card-title">Card Title 4</h6>
+          <p class="card-text">This is a description for card 4.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm lightbox">
+        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image 5">
+        <div class="card-body text-center">
+          <h6 class="card-title">Card Title 5</h6>
+          <p class="card-text">This is a description for card 5.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm lightbox">
+        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image 6">
+        <div class="card-body text-center">
+          <h6 class="card-title">Card Title 6</h6>
+          <p class="card-text">This is a description for card 6.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
