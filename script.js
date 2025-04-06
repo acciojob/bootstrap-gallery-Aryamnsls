@@ -1,3 +1,5 @@
 function showImage(src) {
-  document.getElementById('lightboxImage').src = src;
+  const modalImg = document.getElementById('lightboxImage');
+  modalImg.src = src;
+  modalImg.classList.remove('d-none');
 }
